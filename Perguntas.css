@@ -1,0 +1,431 @@
+body{
+    background-color: rgb(18, 18, 18);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.Hardware{
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    
+}
+.Hardware > button{
+    height: 55px;
+    width: 220px;
+   margin-top: 15px;
+   background-color: rgb(51, 65, 92);
+   border: none;
+   color: aliceblue;
+   font-size: 20px;
+   border-radius: 50px;
+   transition: 0.5s;
+}
+.Hardware > button:hover{
+    transform: translateX(5%);
+    background-color: rgb(0, 119, 182);
+}
+.software{
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    
+}
+.software > button{
+    height: 55px;
+    width: 220px;
+   margin-top: 15px;
+   background-color: rgb(51, 65, 92);
+   border: none;
+   color: aliceblue;
+   font-size: 20px;
+   border-radius: 50px;
+   transition: 0.5s;
+}
+.software > button:hover{
+    transform: translateX(5%);
+    background-color: rgb(0, 119, 182);
+}
+
+
+.Titulo {
+    position: absolute;
+    top: 18%;
+    left: 0;
+    color: aliceblue;
+    font-size: 28px;
+    background-color:rgb(0, 119, 182) ;
+    width: 180px;
+    height: 40px;
+    padding: 1%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid rgb(0, 119, 182);
+}
+.Titulo:hover{
+    background-color: rgb(0, 119, 182);
+    width: 200px;
+    border: 2px solid rgb(0, 119, 182);
+       box-shadow: 0 0 15px rgb(0, 119, 182);
+}
+.Titulo_active{
+    background-color:rgb(0, 119, 182)
+}
+.Titulo2{
+    position: absolute;
+    top: 4%;
+    left: 0;
+    color: aliceblue;
+    font-size: 28px;
+    background-color:rgb(51, 65, 92) ;
+    width: 180px;
+    border: 2px solid rgb(51, 65, 92) ;
+    height: 40px;
+    padding: 1%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s;
+}
+.Titulo2:hover{
+    background-color: rgb(0, 119, 182);
+    width: 200px;
+    border: 2px solid rgb(0, 119, 182);
+    box-shadow: 0 0 15px rgb(0, 119, 182);
+}
+.software{
+    display: none;
+}
+.on{
+    display: block;
+}
+.off{
+    display: none;
+}
+.false{
+    background-color: rgb(51, 65, 92);
+    border-color:rgb(51, 65, 92) ;
+}
+.true{
+    background-color: rgb(0, 119, 182);
+    border:rgb(0, 119, 182) ;
+}
+.power{
+    position: absolute;
+    left: 20%;
+    top: 4%;
+    color: aliceblue;
+    background-color: rgb(0, 119, 182);
+    height: 60px;
+    width: 55px;
+    padding-left: 18px;
+    padding-top: 10px;
+    font-size: 35px;
+    border-radius: 200px;
+    border: 2px solid rgb(0, 119, 182);
+    box-shadow: 0 0 15px rgb(0, 119, 182); 
+    transition: 0.5s;
+}
+.power:hover{
+    box-shadow: 0 0 15px rgb(0, 119, 182); 
+}
+.power_off{
+   background-color:rgb(51, 65, 92);
+   border-color:rgb(51, 65, 92) ;
+   box-shadow: none;
+}
+.energia_aviso2,
+.energia_aviso{
+   z-index: 10000px;
+    position: absolute;
+    height: 100px;
+    width: 590px;
+    color: aliceblue;
+    left: 20%;
+    top: 60%;
+    padding: 18px;
+    font-size: 12px;
+    background-color: rgb(114, 1, 1);
+    box-shadow: 0 0 15px rgb(136, 0, 0); 
+    border-radius: 50px;
+    display: none;
+    animation: aparecer1 1s;
+    transition: 0.5s;
+}
+
+.exit01,.exit02{
+  
+  position: absolute;
+  font-size: 30px;
+  top: 55%;
+  left: 58%;
+  color: aliceblue;
+  display: none;
+  animation: aparecer1 1s;
+}
+.energia_aviso2{
+    z-index: 1000px;
+    position: absolute;
+    height: 120px;
+    width: 590px;
+    color: aliceblue;
+    left: 20%;
+    top: 60%;
+    padding: 18px;
+    font-size: 12px;
+    background-color:rgb(114, 1, 1) ;
+    box-shadow: 0 0 15px rgb(136, 0, 0); 
+    border-radius: 50px;
+    display: none;
+    animation: aparecer2 1s;
+    transition: 0.5s;
+}
+.energia_aviso,.energia_aviso2:hover{
+    background-color: rgb(141, 0, 0); 
+}
+
+
+
+@keyframes aparecer1 {
+    0%{
+        transform: translateY(90%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes aparecer2 {
+    0%{
+        transform: translateY(90%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.avisos_on{
+    display: block;
+}
+
+.pergunta{
+    position: absolute;
+    height: 200px;
+    width: 490px;
+    background-color: rgb(0, 119, 182);
+    left: 62%;
+    top: 16%;
+    border-radius: 50px;
+    padding: 10px;
+    color: aliceblue;
+    animation: aparecer_pergunta 1s;
+    overflow: hidden;
+}
+.pergunta > h1{
+    color: aliceblue;
+}
+.pergunta > p{
+    font-size: 18px;
+    font-family: monospace;
+   
+}
+@keyframes aparecer_pergunta {
+   from{
+    transform: translateY(130%);
+
+   }
+   to{
+    transform: translateY(0%);
+   }
+}
+
+#pontos{
+    position: absolute;
+    left: 44%;
+    color: aliceblue;
+ 
+}
+.dica{
+    position: absolute;
+   padding: 10PX;
+    width: 490px;
+    height: 200PX;
+    font-size: 18px;
+    font-family: monospace;
+    background-color:#52B788 ;
+    color: aliceblue;
+    border-radius: 50px;
+    top: 44%;
+    left: 62%;
+    display: none;
+    animation: aparecendo_dica 1s;
+}
+@keyframes aparecendo_dica {
+    from{
+        transform: translateY(30%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+.visivel{
+    display: block;
+}
+.invisivel{
+    display: none;
+}
+.pergunta_pos_dica{
+    top: 10%;
+    animation: parecendo_com_dica 1s;
+}
+@keyframes parecendo_com_dica {
+    from{
+        transform: translateY(16%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+.proximo{
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    background-color: #24503b;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50px;
+    left: 80%;
+    top: 85%;
+    transition: 0.5s;
+    animation: proximo 1s;
+    display: none;
+}
+@keyframes proximo {
+    from{
+        transform: translateX(30%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+.proximo:hover{
+    width: 250px;
+    background-color:#52B788;
+}
+.on{
+    display: block;
+}
+.img1,.img2,.img3,.img4,.img5,.img6{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    left: 28%;
+    top: 17%;
+    display: none;
+}
+
+.show{
+    display: block;
+    animation: img_aparecendo 1s;
+}
+@keyframes img_aparecendo {
+    from{
+        filter: opacity(0%);
+    }
+    to{
+        filter: opacity(100%);
+    }
+}
+
+.all_errado{
+    filter: blur(50px);
+    display: block;
+}
+.errada{
+    position: absolute;
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 18px;
+    height: 160px;
+    width: 500px;
+    padding: 20px;
+    background-color:rgb(114, 1, 1) ;
+    box-shadow: 0 0 15px rgb(136, 0, 0); 
+    border-radius: 50px;
+    top: 20%;
+    left: 32%;
+    display: none;
+    animation: erro 1s;
+}
+@keyframes erro {
+    from{
+        transform: translateY(150%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+.errada > h1{
+    text-align: center;
+}
+.errada > p{
+    text-align: center;
+}
+.sair{ 
+    position: absolute;
+    left: 65%;
+    top: 16%;
+    font-size: 25px;
+    color: aliceblue; 
+    animation: erro 1s;
+    display: none;
+}
+.errado_on{
+    display: block;
+}
+
+
+.errado_on{
+    display: block;
+}
+.certo{
+    position: absolute;
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 18px;
+    height: 160px;
+    width: 500px;
+    padding: 20px;
+    background-color:rgb(1, 114, 31) ;
+    box-shadow: 0 0 15px rgb(0, 149, 40); 
+    border-radius: 50px;
+    top: 20%;
+    left: 32%;
+    display: none;
+    animation: certo 1s;
+}
+@keyframes certo {
+    from{
+        transform: translateY(150%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+.certo > h1{
+    text-align: center;
+}
+.certo > p{
+    text-align: center;
+}
+.sair2{ 
+    position: absolute;
+    left: 65%;
+    top: 16%;
+    font-size: 25px;
+    color: aliceblue; 
+    animation: erro 1s;
+    display: none;
+}
+.certo_on{
+    display: block;
+}

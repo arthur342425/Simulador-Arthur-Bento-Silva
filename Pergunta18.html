@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Perguntas.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<div class="all">
+    <h1 id="pontos">Pontos: <span id="pontosValor">100</span></h1>
+
+
+
+    <div class="Titulo2" onclick="sumir1()">Software <i class="bi bi-cpu"></i></div>
+    <div class="Titulo" onclick="aparecer1()">Hardware <i class="bi bi-motherboard"></i></div>
+    <div class="Hardware">
+
+        <button onclick="energia_ligada(); errado(); " id="but1">Placa-mãe</button><br>
+        <button onclick="energia_ligada(); errado(); " id="but2">Processador</button><br>
+        <button onclick="energia_ligada(); errado(); " id="but3">disco rígido</button><br>
+        <button onclick="energia_ligada(); errado(); " id="but4">Memória RAM</button><br>
+        <button onclick="energia_ligada(); errado(); " id="but5">Fonte de alimentação</button><br>
+        <button onclick="energia_ligada(); errado(); " id="but6">Placa de video</button><br>
+     
+
+    </div>
+    
+    <div class="software">
+
+        <button onclick="energia_desligada(); errado(); ">Atualizar drivers</button><br>
+        <button onclick="energia_desligada(); certo_software(); ">Virus</button><br>
+        <button onclick="energia_desligada(); errado(); ">Formatar o sistema</button><br>
+        <button onclick="energia_desligada(); errado(); ">Reinstalar o software</button><br>
+        <button onclick="energia_desligada(); errado(); ">Limper cache</button><br>
+        
+
+    </div>
+
+    <div class="power" onclick="desligar_ligar()">
+
+        <i class="bi bi-power"></i>
+
+    </div>
+
+    <div class="exit01" onclick= "exit()"><i class="bi bi-x-lg"></i></div> 
+    <div class="energia_aviso">
+
+        <h1>Você não pode fazer reparos nas peças de hardwere,
+             enquanto o computador estivar ligado a energia.</h1>
+
+    </div>
+
+    <div class="exit02" onclick= "exit2()"><i class="bi bi-x-lg"></i></div> 
+    <div class="energia_aviso2">
+
+        <h1>Você não pode fazer reparos nas peças de software,
+             enquanto o computador não estiver ligado a energia.</h1>
+
+    </div>
+
+
+
+    <div class="pergunta">
+
+        <h1>Pergunta 18</h1>
+
+        <p>O computar apresenta uma lentidão aparentemente sem explicação e ao ver 
+        o desempenho dos aplicativos e programas estalados um programa com o nome de 
+        Trojan.exe esta usando quase todo o desempenho computador
+        </p>
+
+    </div>
+   <div class="icon2"><i class="bi bi-caret-down-fill"></i></div>
+
+   <div class="dica">
+
+    <h1>DICA</h1>
+    <p>
+        Trojans são os famosos vírus cavalos de troia, seu objetivo é entrar
+         em sistemas e depois disso ajudar na entrada de outros vírus.</p>
+
+
+   </div>
+   <a href="Pergunta19.html"><div class="proximo">Proxima</div></a>
+
+   <img class="img1" src="Img/placa-mae-gigabyte-h510m-h-chipset-h510-intel-lga-1200-matx-ddr4_122404.webp" alt="">
+   <img class="img2" src="Img/processador_intel_core_i5_2400_3_1ghz_lga_1155_oem_995_1_20200617115634-removebg-preview.png" alt="">
+   <img class="img3" src="Img/img-removebg-preview.png" alt="">
+   <img class="img4" src="Img/DDR4_module_2-0-removebg-preview.png" alt="">
+   <img class="img5" src="Img/Fonte-de-alimentação-removebg-preview.png" alt="">
+   <img class="img6" src="Img/dual-rtx4060-o8g-evo5-removebg-preview.png" alt="">
+
+
+</div>
+
+<div class="errada">
+    <h1>ERRADO</h1>
+    <p>-10 pontos.</p>
+</div>
+<div class="sair" onclick="voltar()"><i class="bi bi-x-lg"></i></div>
+
+<div class="certo">
+    <h1>Correto</h1>
+    <p>+50 pontos.</p>
+</div>
+<div class="sair2" onclick="voltar2()"><i class="bi bi-x-lg"></i></div>
+
+</body>
+<script src="Perguntas.js"></script>
+</html>
